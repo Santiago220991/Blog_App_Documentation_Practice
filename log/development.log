@@ -1,0 +1,230 @@
+Started GET "/" for 127.0.0.1 at 2022-08-26 11:07:29 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (92.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (89.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220826155622_create_pets.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api-docs" for ::1 at 2022-08-26 11:07:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220826155622_create_pets.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2022-08-26 11:07:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePets (20220826155622)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "photo_url" varchar, "status" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220826155622"]]
+  [1m[36mTRANSACTION (164.6ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/rails/actions" for ::1 at 2022-08-26 11:07:40 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-26 16:07:40.024354"], ["updated_at", "2022-08-26 16:07:40.024354"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (303.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-26 16:07:40.025297"], ["updated_at", "2022-08-26 16:07:40.025297"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: ar_internal_metadata.key):
+  
+sqlite3 (1.4.4) lib/sqlite3/statement.rb:108:in `step'
+sqlite3 (1.4.4) lib/sqlite3/statement.rb:108:in `block in each'
+sqlite3 (1.4.4) lib/sqlite3/statement.rb:107:in `loop'
+sqlite3 (1.4.4) lib/sqlite3/statement.rb:107:in `each'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/sqlite3/database_statements.rb:56:in `to_a'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/sqlite3/database_statements.rb:56:in `block (2 levels) in exec_query'
+activesupport (7.0.3.1) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (7.0.3.1) lib/active_support/dependencies/interlock.rb:41:in `permit_concurrent_loads'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/sqlite3/database_statements.rb:47:in `block in exec_query'
+activesupport (7.0.3.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (7.0.3.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (7.0.3.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (7.0.3.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract_adapter.rb:765:in `block in log'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract_adapter.rb:756:in `log'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/sqlite3/database_statements.rb:46:in `exec_query'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/database_statements.rb:132:in `exec_insert'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/database_statements.rb:167:in `insert'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/query_cache.rb:22:in `insert'
+activerecord (7.0.3.1) lib/active_record/persistence.rb:496:in `_insert_record'
+activerecord (7.0.3.1) lib/active_record/persistence.rb:1096:in `_create_record'
+activerecord (7.0.3.1) lib/active_record/counter_cache.rb:166:in `_create_record'
+activerecord (7.0.3.1) lib/active_record/locking/optimistic.rb:79:in `_create_record'
+activerecord (7.0.3.1) lib/active_record/attribute_methods/dirty.rb:222:in `_create_record'
+activerecord (7.0.3.1) lib/active_record/callbacks.rb:461:in `block in _create_record'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:929:in `_run_create_callbacks'
+activerecord (7.0.3.1) lib/active_record/callbacks.rb:461:in `_create_record'
+activerecord (7.0.3.1) lib/active_record/timestamp.rb:108:in `_create_record'
+activerecord (7.0.3.1) lib/active_record/persistence.rb:1067:in `create_or_update'
+activerecord (7.0.3.1) lib/active_record/callbacks.rb:457:in `block in create_or_update'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:929:in `_run_save_callbacks'
+activerecord (7.0.3.1) lib/active_record/callbacks.rb:457:in `create_or_update'
+activerecord (7.0.3.1) lib/active_record/timestamp.rb:126:in `create_or_update'
+activerecord (7.0.3.1) lib/active_record/persistence.rb:648:in `save!'
+activerecord (7.0.3.1) lib/active_record/validations.rb:53:in `save!'
+activerecord (7.0.3.1) lib/active_record/transactions.rb:302:in `block in save!'
+activerecord (7.0.3.1) lib/active_record/transactions.rb:354:in `block in with_transaction_returning_status'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/database_statements.rb:314:in `transaction'
+activerecord (7.0.3.1) lib/active_record/transactions.rb:350:in `with_transaction_returning_status'
+activerecord (7.0.3.1) lib/active_record/transactions.rb:302:in `save!'
+activerecord (7.0.3.1) lib/active_record/suppressor.rb:54:in `save!'
+activerecord (7.0.3.1) lib/active_record/persistence.rb:780:in `block in update!'
+activerecord (7.0.3.1) lib/active_record/transactions.rb:354:in `block in with_transaction_returning_status'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/transaction.rb:319:in `block in within_new_transaction'
+activesupport (7.0.3.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (7.0.3.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (7.0.3.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (7.0.3.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/transaction.rb:317:in `within_new_transaction'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/database_statements.rb:316:in `transaction'
+activerecord (7.0.3.1) lib/active_record/transactions.rb:350:in `with_transaction_returning_status'
+activerecord (7.0.3.1) lib/active_record/persistence.rb:778:in `update!'
+activerecord (7.0.3.1) lib/active_record/internal_metadata.rb:31:in `[]='
+activerecord (7.0.3.1) lib/active_record/migration.rb:1341:in `record_environment'
+activerecord (7.0.3.1) lib/active_record/migration.rb:1334:in `migrate_without_lock'
+activerecord (7.0.3.1) lib/active_record/migration.rb:1284:in `migrate'
+activerecord (7.0.3.1) lib/active_record/migration.rb:1117:in `up'
+activerecord (7.0.3.1) lib/active_record/migration.rb:1092:in `migrate'
+activerecord (7.0.3.1) lib/active_record/tasks/database_tasks.rb:262:in `migrate'
+activerecord (7.0.3.1) lib/active_record/migration.rb:137:in `block in <class:PendingMigrationError>'
+activesupport (7.0.3.1) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/rails/actions" for ::1 at 2022-08-26 11:07:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs" for ::1 at 2022-08-26 11:07:40 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-08-26 11:07:40 -0500
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-08-26 11:07:41 -0500
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-08-26 11:07:41 -0500
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-08-26 11:07:41 -0500
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-08-26 11:07:41 -0500
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-08-26 11:07:41 -0500
